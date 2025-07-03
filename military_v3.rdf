@@ -1,0 +1,2043 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/"
+     xml:base="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error1 -->
+
+    <rdfs:Datatype rdf:about="http://org.semanticweb.owlapi/error#Error1"/>
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error2 -->
+
+    <rdfs:Datatype rdf:about="http://org.semanticweb.owlapi/error#Error2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Belongs_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Belongs_to">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="ru">принадлежит к</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#has">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+        <rdfs:comment xml:lang="ru">имеет</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#participated -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#participated">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Equipment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Units"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Personnel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Operations"/>
+        <rdfs:comment xml:lang="ru">участвовал</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#placement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#placement">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="ru">размещен</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Commands -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Commands">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Command"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Personnel"/>
+        <rdfs:comment xml:lang="ru">Командует</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Consists_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Consists_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Units"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Personnel"/>
+        <rdfs:comment xml:lang="ru">Состоит из</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Cooperates_with -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Cooperates_with">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Artillery"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Infantry"/>
+        <rdfs:comment xml:lang="ru">Взаимодействует</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Equipped_with -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Equipped_with">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Armored_Forces"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Artillery"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Engineering_Units"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Armored_Vehicles"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Artillery_Systems"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Engineering_Equipment"/>
+        <rdfs:comment xml:lang="ru">Оснащен</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Performs_task -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Performs_task">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Units"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Operations"/>
+        <rdfs:comment xml:lang="ru">Выполняет задачу</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Related_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Related_to">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Operations"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Units"/>
+        <rdfs:comment xml:lang="ru">Связана с</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Uses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Uses">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Engineering_Units"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Engineering_Equipment"/>
+        <rdfs:comment xml:lang="ru">использует</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Uses_equipment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Uses_equipment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Units"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Equipment"/>
+        <rdfs:comment xml:lang="ru">Использует технику</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#location">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Staff"/>
+        <rdfs:comment xml:lang="ru">локация город</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Armor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Armor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Tank"/>
+        <rdfs:range rdf:resource="http://org.semanticweb.owlapi/error#Error2"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Active protection</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Dynamic protection</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Homogeneous armor</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Multilayer armor</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>Rolled steel</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="ru">Броня</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Armor"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+        <owl:annotatedTarget rdf:resource="http://org.semanticweb.owlapi/error#Error2"/>
+        <rdfs:comment xml:lang="ru">стальная катаная, Гомогенная броня, Многослойная броня, Динамическая защита, Активная защита</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Caliber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Caliber">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Weaponry"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>large</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>medium</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>small</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="ru">Калибр</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Engine_Power -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Engine_Power">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Equipment"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="ru">Мощность двигателя</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Engine_Type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Engine_Type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Armored_Vehicles"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>diesel</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>gas turbine</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="ru">Тип двигателя</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Rank -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Rank">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Officer"/>
+        <rdfs:range rdf:resource="http://org.semanticweb.owlapi/error#Error1"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>junior</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>middle</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>senior</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="ru">Ранг</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Rank"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+        <owl:annotatedTarget rdf:resource="http://org.semanticweb.owlapi/error#Error1"/>
+        <rdfs:comment xml:lang="ru">младший, старший, высший</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Weight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Weight">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Equipment"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Heavy&apos;</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Light</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Medium</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>Масса</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Air_Evacuation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Air_Evacuation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Transportation"/>
+        <rdfs:comment xml:lang="ru">Воздушная эвакуация</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Airborne_Troops -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Airborne_Troops">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Infantry"/>
+        <rdfs:comment xml:lang="ru">Десантные войска</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Ammunition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Ammunition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Weaponry"/>
+        <rdfs:comment xml:lang="ru">Боеприпасы</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Anti-Aircraft_Artillery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Anti-Aircraft_Artillery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Artillery"/>
+        <rdfs:comment xml:lang="ru">Зенитная артиллерия</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Armored_Forces -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Armored_Forces">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Units"/>
+        <rdfs:comment xml:lang="ru">Бронетанковые войска</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Armored_Personnel_Carrier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Armored_Personnel_Carrier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Armored_Vehicles"/>
+        <rdfs:comment xml:lang="ru">Бронетранспортёр</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Armored_Personnel_Carriers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Armored_Personnel_Carriers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Armored_Forces"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Armored_Vehicles"/>
+        <rdfs:comment xml:lang="ru">Бронетранспортеры</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Armored_Vehicles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Armored_Vehicles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Equipment"/>
+        <rdfs:comment>Бронетехника</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Army -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Army">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Divisions"/>
+        <rdfs:comment xml:lang="ru">Армия</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Artillery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Artillery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Units"/>
+        <rdfs:comment xml:lang="ru">Артиллерия</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Artillery_Systems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Artillery_Systems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Equipment"/>
+        <rdfs:comment xml:lang="ru">Артиллерийские системы</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Attack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Attack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Offensive_Operations"/>
+        <rdfs:comment xml:lang="ru">Атака</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Attack_Aircraft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Attack_Aircraft">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Support_Aviation"/>
+        <rdfs:comment xml:lang="ru">Штурмовая авиация</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Battalion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Battalion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Divisions"/>
+        <rdfs:comment xml:lang="ru">Батальон</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Bridge_Layers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Bridge_Layers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Engineering_Equipment"/>
+        <rdfs:comment xml:lang="ru">Мостоукладчики</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Bulldozers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Bulldozers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Engineering_Equipment"/>
+        <rdfs:comment xml:lang="ru">Бульдозеры</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Captain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Captain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Officer"/>
+        <rdfs:comment xml:lang="ru">Капитан</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Cartridges -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Cartridges">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Ammunition"/>
+        <rdfs:comment xml:lang="ru">Патроны</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Cavalry_Recon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Cavalry_Recon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Reconnaissance_Units"/>
+        <rdfs:comment xml:lang="ru">Кавалерийская разведка</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Colonel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Colonel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Officer"/>
+        <rdfs:comment xml:lang="ru">Полковник</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Command -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Command">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Personnel"/>
+        <rdfs:comment xml:lang="ru">Командование</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Company -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Company">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Divisions"/>
+        <rdfs:comment xml:lang="ru">Рота</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Construction_Battalions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Construction_Battalions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Engineering_Units"/>
+        <rdfs:comment xml:lang="ru">Строительные батальоны</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Counterattack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Counterattack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Maneuver_Actions"/>
+        <rdfs:comment xml:lang="ru">Контратака</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Defense -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Defense">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Defensive_Operations"/>
+        <rdfs:comment xml:lang="ru">Оборона</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Defensive_Operations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Defensive_Operations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Operations"/>
+        <rdfs:comment xml:lang="ru">Оборонительные операции</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Department">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Divisions"/>
+        <rdfs:comment xml:lang="ru">Отделение</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Division -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Division">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Divisions"/>
+        <rdfs:comment xml:lang="ru">Дивизия</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Divisions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Divisions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Units"/>
+        <rdfs:comment xml:lang="ru">Подразделения</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Drone_Recon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Drone_Recon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Reconnaissance_Units"/>
+        <rdfs:comment xml:lang="ru">Беспилотная разведка</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Engineer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Engineer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Technical_Personnel"/>
+        <rdfs:comment xml:lang="ru">Инженер</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Engineering_Equipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Engineering_Equipment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Equipment"/>
+        <rdfs:comment xml:lang="ru">Инженерная техника</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Engineering_Units -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Engineering_Units">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Units"/>
+        <rdfs:comment xml:lang="ru">Инженерные войска</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Evacuation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Evacuation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Maneuver_Actions"/>
+        <rdfs:comment xml:lang="ru">Эвакуация</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Field_Artillery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Field_Artillery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Artillery"/>
+        <rdfs:comment xml:lang="ru">Полевая артиллерия</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Firearms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Firearms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Weaponry"/>
+        <rdfs:comment xml:lang="ru">Огнестрельное оружие</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Flanking_Maneuver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Flanking_Maneuver">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Offensive_Operations"/>
+        <rdfs:comment xml:lang="ru">Фланговый маневр</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Fortified_Defense -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Fortified_Defense">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Defensive_Operations"/>
+        <rdfs:comment xml:lang="ru">Укрепленная оборона</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Frontal_Assault -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Frontal_Assault">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Offensive_Operations"/>
+        <rdfs:comment xml:lang="ru">Лобовая атака</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/General -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/General">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Officer"/>
+        <rdfs:comment xml:lang="ru">Генерал</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Grenadier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Grenadier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Soldiers"/>
+        <rdfs:comment xml:lang="ru">Гранатометчик</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Ground_Transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Ground_Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Transportation"/>
+        <rdfs:comment xml:lang="ru">Наземный транспорт</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Heavy_Weaponry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Heavy_Weaponry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Weaponry"/>
+        <rdfs:comment xml:lang="ru">Тяжелое вооружение</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Helicopters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Helicopters">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Support_Aviation"/>
+        <rdfs:comment xml:lang="ru">Вертолеты</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Housing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Housing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Divisions"/>
+        <rdfs:comment xml:lang="ru">Корпус</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Infantry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Infantry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Units"/>
+        <rdfs:comment xml:lang="ru">Пехота</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Infantry_Fighting_Vehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Infantry_Fighting_Vehicle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Armored_Vehicles"/>
+        <rdfs:comment>Боевая машина пехоты</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Lieutenant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Lieutenant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Officer"/>
+        <rdfs:comment xml:lang="ru">Лейтенант</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Lieutenant_Colonel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Lieutenant_Colonel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Officer"/>
+        <rdfs:comment xml:lang="ru">Подполковник</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Major -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Major">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Officer"/>
+        <rdfs:comment xml:lang="ru">Майор</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Maneuver_Actions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Maneuver_Actions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Operations"/>
+        <rdfs:comment xml:lang="ru">Маневренные действия</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Mechanic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Mechanic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Technical_Personnel"/>
+        <rdfs:comment xml:lang="ru">Механик</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Mechanized_Infantry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Mechanized_Infantry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Infantry"/>
+        <rdfs:comment xml:lang="ru">Механизированная пехота</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Equipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Equipment">
+        <rdfs:comment xml:lang="ru">Военная техника</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Operations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Operations">
+        <rdfs:comment xml:lang="ru">Военные операции</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Units -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Units">
+        <rdfs:comment xml:lang="ru">Военные подразделения</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Mobile_Defense -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Mobile_Defense">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Defensive_Operations"/>
+        <rdfs:comment xml:lang="ru">Мобильная оборона</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Mortars -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Mortars">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Heavy_Weaponry"/>
+        <rdfs:comment xml:lang="ru">Минометы</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Motorized_Infantry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Motorized_Infantry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Infantry"/>
+        <rdfs:comment xml:lang="ru">Моторизованная пехота</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Offensive_Operations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Offensive_Operations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Operations"/>
+        <rdfs:comment xml:lang="ru">Наступательные операции</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Officer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Officer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Personnel"/>
+        <rdfs:comment xml:lang="ru">Офицер</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Personnel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Personnel">
+        <rdfs:comment xml:lang="ru">Личный состав</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Pistols -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Pistols">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Firearms"/>
+        <rdfs:comment xml:lang="ru">Пистолеты</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Platoon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Platoon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Divisions"/>
+        <rdfs:comment xml:lang="ru">Взвод</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Raid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Raid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Maneuver_Actions"/>
+        <rdfs:comment xml:lang="ru">Рейд</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Reconnaissance_Units -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Reconnaissance_Units">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Units"/>
+        <rdfs:comment xml:lang="ru">Разведывательные войска</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Regiment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Regiment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Divisions"/>
+        <rdfs:comment xml:lang="ru">Полк</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Rifleman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Rifleman">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Soldiers"/>
+        <rdfs:comment xml:lang="ru">Стрелок</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Rifles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Rifles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Firearms"/>
+        <rdfs:comment xml:lang="ru">Винтовки</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Rocket_Launchers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Rocket_Launchers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Heavy_Weaponry"/>
+        <rdfs:comment xml:lang="ru">Ракетные установки</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Sapper_Units -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Sapper_Units">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Engineering_Units"/>
+        <rdfs:comment xml:lang="ru">Саперные подразделения</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Self-Propelled_Artillery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Self-Propelled_Artillery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Artillery_Systems"/>
+        <rdfs:comment xml:lang="ru">Самоходная артиллерия</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Shells -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Shells">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Ammunition"/>
+        <rdfs:comment xml:lang="ru">Снаряды</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Soldiers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Soldiers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Personnel"/>
+        <rdfs:comment xml:lang="ru">Солдаты</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Command"/>
+        <rdfs:comment xml:lang="ru">Штаб</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Support_Aviation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Support_Aviation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Military_Equipment"/>
+        <rdfs:comment xml:lang="ru">Авиация поддержки</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Tank -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Tank">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Armored_Vehicles"/>
+        <rdfs:comment xml:lang="ru">Танк</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Tank_Battalions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Tank_Battalions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Armored_Forces"/>
+        <rdfs:comment xml:lang="ru">Танковые батальоны</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Technical_Personnel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Technical_Personnel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Personnel"/>
+        <rdfs:comment xml:lang="ru">Технический персонал</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Divisions"/>
+        <rdfs:comment xml:lang="ru">Бригада</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Towed_Artillery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Towed_Artillery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Artillery_Systems"/>
+        <rdfs:comment xml:lang="ru">Буксируемая артиллерия</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Transportation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Transportation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Weaponry"/>
+        <rdfs:comment xml:lang="ru">Транспортировка</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Command"/>
+        <rdfs:comment xml:lang="ru">Командир подразделения</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Weaponry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Weaponry">
+        <rdfs:comment xml:lang="ru">Вооружение</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#AKMS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#AKMS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Rifles"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#AKS-74 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#AKS-74">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Rifles"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#AKS-74U -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#AKS-74U">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Rifles"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Airbus_A400M -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Airbus_A400M">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Air_Evacuation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#An-12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#An-12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Air_Evacuation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#An-26 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#An-26">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Air_Evacuation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#An-30 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#An-30">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Air_Evacuation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#An-72 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#An-72">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Air_Evacuation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Astana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Astana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Staff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#BMP-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#BMP-1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Infantry_Fighting_Vehicle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#BMP-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#BMP-2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Infantry_Fighting_Vehicle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#BTR-60 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#BTR-60">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Armored_Personnel_Carrier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#BTR-80A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#BTR-80A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Armored_Personnel_Carrier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#BTR-82A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#BTR-82A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Armored_Personnel_Carrier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Bell-205_UH-1_Iroquois -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Bell-205_UH-1_Iroquois">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Helicopters"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#CASA_C-295 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#CASA_C-295">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Air_Evacuation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#D-20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#D-20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Towed_Artillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#D-30A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#D-30A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Towed_Artillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#East -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#East">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Staff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#GJ-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#GJ-1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Drone_Recon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Gas_pistol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Gas_pistol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Pistols"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#KAMAZ-43269 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#KAMAZ-43269">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Armored_Personnel_Carrier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Karasai_Batyr_Ground_Forces_Training_Center -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Karasai_Batyr_Ground_Forces_Training_Center">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Let_L-410_Turbolet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Let_L-410_Turbolet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Air_Evacuation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#MT-LB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#MT-LB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Armored_Personnel_Carrier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#MTU-20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#MTU-20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Bridge_Layers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Makarov_pistol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Makarov_pistol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Pistols"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Mi-171Sh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Mi-171Sh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Helicopters"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Mi-17V-5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Mi-17V-5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Helicopters"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Mi-24V -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Mi-24V">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Helicopters"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Mi-26 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Mi-26">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Helicopters"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Mi-35M -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Mi-35M">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Helicopters"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#MiG-23UB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#MiG-23UB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Attack_Aircraft"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#MiG-27 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#MiG-27">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Attack_Aircraft"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#MiG-29 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#MiG-29">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Attack_Aircraft"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#MiG-29UB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#MiG-29UB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Attack_Aircraft"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#MiG-31 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#MiG-31">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Attack_Aircraft"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#MiG-31BM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#MiG-31BM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Attack_Aircraft"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#PP-90 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#PP-90">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Pistols"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Separate_communications_battalion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Separate_communications_battalion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Battalion"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Separate_communications_brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Separate_communications_brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#South -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#South">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Staff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Su-27UB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Su-27UB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Attack_Aircraft"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Su-30SM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Su-30SM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Attack_Aircraft"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#TAI_Anka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#TAI_Anka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Drone_Recon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#TMM-3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#TMM-3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Bridge_Layers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Terminator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Terminator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Tank"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Training_Center_of_the_Missile_Forces_and_Artillery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Training_Center_of_the_Missile_Forces_and_Artillery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Training_center_for_combat_training_and_combat_use_of_junior_reserve_specialists -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Training_center_for_combat_training_and_combat_use_of_junior_reserve_specialists">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Tu-134 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Tu-134">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Air_Evacuation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#West -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#West">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Staff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Y-8F-200WA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Y-8F-200WA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Air_Evacuation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#military_base -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#military_base">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#pistol_PSM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#pistol_PSM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Pistols"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#pistols_SPSh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#pistols_SPSh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Pistols"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#separate_motorized_rifle_regiment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#separate_motorized_rifle_regiment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Motorized_Infantry"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Regiment"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#separate_mounted_mountain_ranger_regiment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#separate_mounted_mountain_ranger_regiment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Regiment"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#separate_reconnaissance_regiment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#separate_reconnaissance_regiment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Regiment"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#special_purpose_reconnaissance_regiment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#special_purpose_reconnaissance_regiment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Regiment"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Т-72БА -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Т-72БА">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Tank"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#100th_Artillery_Brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#100th_Artillery_Brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#101st_Missile_Brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#101st_Missile_Brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#102nd_Rocket_Artillery_Brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#102nd_Rocket_Artillery_Brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#103rd_Cannon_Artillery_Brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#103rd_Cannon_Artillery_Brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#11th_Tank_Brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#11th_Tank_Brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#12th_Mechanized_Brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#12th_Mechanized_Brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#2A36_Giatsint-B -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#2A36_Giatsint-B">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Towed_Artillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#2A65_Msta-B -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#2A65_Msta-B"/>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#2B11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#2B11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Mortars"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#2B14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#2B14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Mortars"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#2S1_Gvozdika -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#2S1_Gvozdika">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Self-Propelled_Artillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#2S3_Acacia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#2S3_Acacia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Self-Propelled_Artillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#2S4_Tulip -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#2S4_Tulip">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Self-Propelled_Artillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#221st_Separate_Communications_Brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#221st_Separate_Communications_Brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#23rd_Engineer-Sapper_Brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#23rd_Engineer-Sapper_Brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#232nd_Engineer-Sapper_Brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#232nd_Engineer-Sapper_Brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#3rd_Separate_Guards_Mechanized_Brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#3rd_Separate_Guards_Mechanized_Brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Mechanized_Infantry"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#34th_Artillery_Brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#34th_Artillery_Brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#35th_Separate_Guards_Airborne_Assault_Brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#35th_Separate_Guards_Airborne_Assault_Brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Airborne_Troops"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#36th_Airborne_Assault_Brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#36th_Airborne_Assault_Brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Airborne_Troops"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#37th_Airborne_Assault_Brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#37th_Airborne_Assault_Brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Airborne_Troops"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#38th_airborne_assault_brigade_Kazbrig -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#38th_airborne_assault_brigade_Kazbrig">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Airborne_Troops"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#390th_Separate_Guards_Marine_Brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#390th_Separate_Guards_Marine_Brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#4th_separate_mechanized_brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#4th_separate_mechanized_brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Mechanized_Infantry"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#401st_Cannon_Artillery_Brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#401st_Cannon_Artillery_Brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#402nd_Rocket_Artillery_Brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#402nd_Rocket_Artillery_Brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#403rd_Antitank_Artillery_Brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#403rd_Antitank_Artillery_Brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#43rd_Tank_Brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#43rd_Tank_Brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#44th_Artillery_Brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#44th_Artillery_Brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#5th_Mechanized_Brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#5th_Mechanized_Brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Mechanized_Infantry"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#54th_Guards_Artillery_Brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#54th_Guards_Artillery_Brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#6th_Mechanized_Brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#6th_Mechanized_Brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Mechanized_Infantry"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#7th_separate_mechanized_brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#7th_separate_mechanized_brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#8th_separate_mechanized_brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#8th_separate_mechanized_brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#9A35_Strela-10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#9A35_Strela-10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Anti-Aircraft_Artillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#9K79-1_Tochka-U -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#9K79-1_Tochka-U">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Artillery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#9th_Mechanized_Brigade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#9th_Mechanized_Brigade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Mechanized_Infantry"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/The_brigade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Unit_Commander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Su-25/Su-25SM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2#Su-25/Su-25SM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Attack_Aircraft"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/БТР-80 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/БТР-80">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Armored_Personnel_Carrier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Т-90 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Т-90">
+        <rdf:type rdf:resource="http://www.semanticweb.org/баянгали/ontologies/2024/9/untitled-ontology-2/Tank"/>
+        <rdfs:comment xml:lang="ru">танк</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
